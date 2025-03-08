@@ -1,14 +1,16 @@
 {
   "name": "week_2",
   "version": "1.0.0",
-  "main": "Server.js",
+  "main": "api.js",
   "scripts": {
-    "start": "node Server.js"
+    "start": "node Server.js",
+    "api": "node api.js"
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^4.21.2"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
