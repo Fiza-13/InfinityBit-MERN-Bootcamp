@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Small Toys",
+    "age": "1-5"
+  },
+  {
+    "id": 2,
+    "name": "Remote Control Car",
+    "age": "5-10"
+  },
+  {
+    "id": 3,
+    "name": "Suspense Books",
+    "age": "10-15"
+  },
+  {
+    "id": 4,
+    "name": "Perfume",
+    "age": "15-20"
+  },
+  {
+    "id": 5,
+    "name": "Alarm Clock",
+    "age": "20-25"
+  },
+  {
+    "id": 6,
+    "name": "Wallet",
+    "age": "25-30"
+  },
+  {
+    "id": 7,
+    "name": "Surprise Birthday Party",
+    "age": "30-35"
+  },
+  {
+    "id": 8,
+    "name": "A solo trip ticket",
+    "age": "35-40"
+  },
+  {
+    "id": 9,
+    "name": "Mug",
+    "age": "40-45"
+  },
+  {
+    "id": 10,
+    "name": "Something related to worshipping",
+    "age": "45-50"
+  },
+  {
+    "id": 11,
+    "name": "Hair Straigthner",
+    "age": "20-24"
+  }
+]
