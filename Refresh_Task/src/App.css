@@ -1,0 +1,150 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(197, 255, 197);
+  color: rgb(22, 22, 22);
+}
+
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+.board{
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tile{
+  color: currentColor;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-border{
+  border-right: 0.2em solid rgb(12, 12, 48);
+}
+
+.bottom-border{
+  border-bottom: 0.2em solid rgb(12, 12, 48);
+}
+
+.x-hover:hover::after{
+  content: "X";
+  opacity: 0.4;
+}
+
+.o-hover:hover::after{
+  content: "O";
+  opacity: 0.4;
+}
+
+.strike {
+  position: absolute;
+  background-color: red;
+}
+
+.strike-row-1 {
+  width: 100%;
+  height: 4px;
+  top: 15%;
+}
+.strike-row-2 {
+  width: 100%;
+  height: 4px;
+  top: 48%;
+}
+.strike-row-3 {
+  width: 100%;
+  height: 4px;
+  top: 83%;
+}
+.strike-column-1 {
+  height: 100%;
+  width: 4px;
+  left: 15%;
+}
+.strike-column-2 {
+  height: 100%;
+  width: 4px;
+  left: 48%;
+}
+.strike-column-3 {
+  height: 100%;
+  width: 4px;
+  left: 83%;
+}
+.strike-diagonal-1 {
+  width: 90%;
+  height: 4px;
+  top: 50%;
+  left: 5%;
+  transform: skewY(45deg);
+}
+.strike-diagonal-2 {
+  width: 90%;
+  height: 4px;
+  top: 50%;
+  left: 5%;
+  transform: skewY(-45deg);
+}
+
+.game-over {
+  text-align: center;
+  border: rgb(34, 139, 34) 7px;
+  border-style:double;
+  padding: 10px;
+  margin-top: 50px;
+  font-size: 1.6em;
+  font-family:Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.reset-button {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgb(104, 24, 24) ;
+  color: white;
+  width: 100%;
+  font-size: 1.7em;
+}
+
+.x-marked{
+  background-color: rgb(144, 238, 144) ;
+}
+.o-marked{
+  background-color:  rgb(34, 139, 34) ;
+}
+.game-container {
+  display: flex;
+}
+
+
+.game-log {
+  width: 40%;
+  border: 4px solid darkgreen;
+  padding: 20px;
+  margin-left: 100px;
+}
+
+.game-log ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.game-log li {
+  padding: 13px;
+  border-bottom: 1px solid #ccc;
+}
+
+.game-log li:last-child {
+  border-bottom: none;
+}
